@@ -1,0 +1,8 @@
+/* The shared brand sits on both dark navigation and the light login panel. */
+.auth-panel .brand > span:last-child {
+  color: #0d1b2a;
+}
+
+.auth-panel .brand > span:last-child em {
+  color: #168e87;
+}
