@@ -26,7 +26,7 @@ For a real deployment, change the database provider to `SqlServer`, supply `Conn
 
 ## Vercel frontend
 
-The frontend is a Vite project rooted at `frontend`. Its production variable is:
+The frontend is a Vite project rooted at `frontend`. `frontend/vercel.json` rewrites browser history routes such as `/dashboard` and `/courses/{id}` to the React entry point, so direct links and refreshes do not return a Vercel 404. Its production variable is:
 
 ```text
 VITE_API_URL=https://medpath-ai-api.onrender.com

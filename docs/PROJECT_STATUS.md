@@ -18,6 +18,7 @@ Last verified: 2026-08-18.
 - Frontend Vitest suite passed: 2 tests.
 - Production dependency audit passed with zero reported production vulnerabilities.
 - Production browser smoke test completed: sign-in redirected to `/dashboard`, loaded the seeded course, and rendered dashboard metrics.
+- Direct Vercel route smoke test completed for `/dashboard` and `/courses/{id}` after adding the SPA rewrite.
 - Render logs showed `/health` returning HTTP 200.
 
 ## Explicit limitations

@@ -64,6 +64,7 @@ MedPathAI/
 │   ├── MedPath.Api/             # HTTP pipeline, policies, controllers and Swagger
 │   └── MedPath.Tests/           # Backend unit tests
 ├── frontend/                   # React, TypeScript, Vite and TanStack Query
+│   └── vercel.json             # SPA history fallback for direct routes
 ├── docs/                       # Architecture, API, deployment, operations and demo notes
 ├── .github/workflows/ci.yml    # Backend and frontend CI
 ├── docker-compose.yml          # Local API + frontend containers
