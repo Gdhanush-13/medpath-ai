@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: medpath-ai-api
+    runtime: docker
+    plan: free
+    repo: https://github.com/Gdhanush-13/medpath-ai
+    branch: main
+    dockerfilePath: ./backend/MedPath.Api/Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: Database__Provider
+        value: InMemory
+      - key: Jwt__Issuer
+        value: MedPathAI
+      - key: Jwt__Audience
+        value: MedPathAI.Web
+      - key: Jwt__Key
+        generateValue: true
