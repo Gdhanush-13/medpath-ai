@@ -1,0 +1,13 @@
+**/bin/
+**/obj/
+**/node_modules/
+**/dist/
+.env
+.env.*
+!.env.example
+.dotnet-cli-home/
+.nuget-packages/
+*.user
+*.suo
+*.log
+backend/MedPath.Api/keys/

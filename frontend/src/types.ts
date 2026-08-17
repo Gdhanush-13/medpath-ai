@@ -1,0 +1,10 @@
+export type Role = 'Student' | 'Educator' | 'Administrator';
+export type User = { id: string; email: string; displayName: string; roles: Role[]; status: string };
+export type AuthResponse = { accessToken: string; refreshToken: string; expiresAtUtc: string; user: User };
+export type Course = { id: string; title: string; description: string; status: string; moduleCount: number; enrollmentCount: number };
+export type Lesson = { id: string; title: string; content: string; completed: boolean };
+export type Module = { id: string; title: string; sortOrder: number; lessons: Lesson[]; assessments: Assessment[] };
+export type Assessment = { id: string; title: string; questions: Question[] };
+export type Question = { id: string; prompt: string; options: { id: string; text: string }[] };
+export type CourseDetails = { id: string; title: string; description: string; status: string; modules: Module[] };
+export type Dashboard = { enrolledCourses: number; completedLessons: number; assessmentsTaken: number; averageScore: number; courses: Course[] };

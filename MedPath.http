@@ -1,0 +1,12 @@
+@baseUrl = http://localhost:5076
+
+GET {{baseUrl}}/health
+
+### Login (development seed)
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "student@medpath.local",
+  "password": "MedPath123!Local"
+}
