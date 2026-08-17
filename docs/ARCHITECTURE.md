@@ -15,7 +15,7 @@ React/Vite -> REST controllers -> Application contracts -> Infrastructure servic
 - Student, Educator and Administrator roles are enforced with named policies.
 - Audit events are persisted for course/user security actions.
 - No secrets are committed. Production JWT keys and connection strings must come from environment variables or a managed secret store.
-- CORS is permissive only for the local sample. Restrict origins before deployment.
+- CORS is intentionally permissive for the demo deployment so the Vercel client can call the Render API. Restrict it to the web origin before production use.
 
 ## Azure-ready path
 
@@ -23,4 +23,4 @@ Use Azure App Service or Container Apps for the API, Static Web Apps for the cli
 
 ## Deliberate scope
 
-The repository demonstrates a complete vertical slice: authentication, role-aware dashboards, course catalog, lesson completion, assessment-ready course data, admin users, audit history and a clearly labelled mock AI assistant. Background jobs, real-time collaboration, file storage and a live AI provider are extension points rather than hidden fake implementations.
+The repository demonstrates a complete vertical slice: authentication, role-aware dashboards, course catalog, lesson completion, assessment-ready course data, admin users, audit history and a clearly labelled mock AI endpoint. Background jobs, real-time collaboration, file storage and a live AI provider are extension points rather than hidden fake implementations.
